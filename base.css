@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'w95fa';
+  src: url(PixelOperator.ttf) format("truetype");
+} 
+
+@font-face {
+  font-family: 'utonium';
+  src: url(OldEnglishGothicPixelRegular-ow2Bo.ttf);
+}
+
+@font-face {
+  font-family: '04B_30';
+  src: url(PixelOperator.ttf);
+}
+
+@font-face {
+  font-family: 'pixel-bubble';
+  src: url(https://lostlove.neocities.org/pixelbubble.TTF);
+}
+
+:root {
+  text-transform: lowercase;
+  letter-spacing: -0.5px;
+}
+
+html {
+  cursor: url(images/cursor.png), auto !important;
+}
+
+button:hover {
+  cursor: url(images/cursorhover.png), auto !important;
+}
+
+a:hover {
+  cursor: url(images/cursorhover.png), auto !important;
+}
+
+body-alternative-pink {
+  --background: url("https://i.pinimg.com/236x/00/56/c8/0056c86c2606ff1b933b07cd63f0d590.jpg");
+  --contrastbg: #fffbf9;
+  --lightest: #f6d9d9;
+  --light: #D6B2B2;
+  --shadow: #c48c8c;
+  --dark: #845555;
+  --darkest: #26120b;
+}
+
+
+body {
+  --background: url("https://i.imgur.com/nE0IPhf.jpg");
+  --contrastbg: #bebcbc; /* White */
+  --lightest: #FFFFFF; /* White */
+  --light: #C0C0C0; /* Light Gray */
+  --mid: #208C71; /* Green */
+  --shadow: #808080; /* Dark Gray */
+  --dark: #176152; /* Dark Green */
+  --darkest: #000000; /* Black */
+}
+
+
+::selection {
+  background-color: var(--shadow);
+  color: var(--contrastbg);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+  background-image: url('https://i.imgur.com/firO49n.png');
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light);
+  border: 2px solid var(--dark);
+  border-top: 2px solid var(--lighter);
+  border-left: 2px solid var(--lighter);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--shadow);
+  box-shadow: none;
+  background-image: none;
+  border: 2px solid var(--light);
+  border-top: 2px solid var(--dark);
+  border-left: 2px solid var(--dark);
+}
+
+::-webkit-scrollbar-button {
+  background-image: url('https://i.imgur.com/yzJJ1bz.png');
+  height: 15px;
+  width: 15px;
+}
+
+::-webkit-scrollbar-button:vertical:start {
+  background-position: -45px 0px;
+}
+
+::-webkit-scrollbar-button:vertical:end {
+  background-position: 0px 0px;
+}
+
+.subtitle {
+  font-family: '04B_30';
+  font-weight: bolder;
+  border: 1px solid #c0cdb2;
+  border-left: 1px solid var(--dark);
+  border-top: 1px solid var(--dark);
+  padding: 2px;
+  background-color: var(--light);
+}
+
+.subtitle {
+  color: var(--lightest);
+  text-shadow:-1px -1px 0 var(--darkest),1px -1px 0 var(--darkest),-1px 1px 0 var(--darkest),1px 1px 0 var(--darkest); 
+  text-decoration: underline;
+  background-color: var(--shadow);
+}
